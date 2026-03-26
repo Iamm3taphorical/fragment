@@ -463,8 +463,35 @@
     });
   }
 
-  // --- Init ---
-  async function init() {
+  // --- Landing Page Transition ---
+  function initLandingPage() {
+    const startBtn = document.querySelector('#btn-start-app');
+    const landingPage = document.querySelector('#landing-page');
+    const titlebar = document.querySelector('#titlebar');
+    const app = document.querySelector('#app');
+
+    if (!startBtn || !landingPage) {
+      // No landing page present, go straight to app
+      startApp();
+      return;
+    }
+
+    startBtn.addEventListener('click', () => {
+      // Add exit animation
+      landingPage.classList.add('exiting');
+
+      // After the CSS transition completes, remove landing and show app
+      setTimeout(() => {
+        landingPage.style.display = 'none';
+        titlebar.classList.remove('app-hidden');
+        app.classList.remove('app-hidden');
+        startApp();
+      }, 600);
+    });
+  }
+
+  // --- Start App (after landing) ---
+  async function startApp() {
     await loadSnippetsFromDisk();
     renderSnippetList();
     bindEvents();
@@ -475,5 +502,6 @@
     }
   }
 
-  init();
+  // --- Init ---
+  initLandingPage();
 })();

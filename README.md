@@ -12,7 +12,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 - **Local-First Storage** — Your snippets are stored locally as JSON. No cloud, no accounts, no tracking.
 - **Multi-Language Syntax Highlighting** — 30+ languages powered by [highlight.js](https://highlightjs.org/).
@@ -24,7 +24,7 @@
 - **Keyboard Shortcuts** — `Ctrl+N` (new), `Ctrl+F` (search), `Ctrl+S` (save), `Ctrl+Shift+D` (delete).
 - **Dark Professional Theme** — Premium deep-oceanic dark UI with refined typography.
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v18+)
@@ -44,14 +44,14 @@ npm install
 npm start
 ```
 
-## 🛠️ Development
+## Development
 
 ```bash
 # Run in development mode
 npm start
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 fragment/
@@ -64,7 +64,7 @@ fragment/
 └── README.md        # This file
 ```
 
-## ⌨️ Keyboard Shortcuts
+## Keyboard Shortcuts
 
 | Shortcut | Action |
 |---|---|
@@ -74,6 +74,6 @@ fragment/
 | `Ctrl+Shift+D` | Delete snippet |
 | `Tab` | Insert 2 spaces in editor |
 
-## 📄 License
+## License
 
 MIT License — see [LICENSE](LICENSE) for details.

@@ -34,7 +34,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/fragment.git
+git clone https://github.com/Iamm3taphorical/fragment.git
 cd fragment
 
 # Install dependencies

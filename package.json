@@ -1,0 +1,17 @@
+{
+  "name": "fragment",
+  "version": "1.0.0",
+  "description": "A smart, local-first code snippet manager with multi-language syntax highlighting and lightning-fast search.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "keywords": ["code", "snippet", "manager", "electron", "developer-tools"],
+  "author": "Mahir Dyan",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^35.2.1"
+  }
+}
